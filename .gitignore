@@ -82,3 +82,6 @@ scripts/
 
 # Dask working directory
 dask-worker-space/
+
+# File di immagine Singularity (pesante piu di un GB)
+Singularity.sif
