@@ -83,5 +83,7 @@ scripts/
 # Dask working directory
 dask-worker-space/
 
-# File di immagine Singularity (pesante piu di un GB)
-Singularity.sif
+dicom_parser
+django_dicom
+django_mri
+django_analyses

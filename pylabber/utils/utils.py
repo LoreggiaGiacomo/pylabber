@@ -73,3 +73,8 @@ class CharNullField(models.CharField):
         else:
             # Otherwise, just pass the value.
             return value
+
+
+class DateTimeWithoutTZField(models.DateTimeField):
+    def db_type(self, connection):
+        return 'timestamp'

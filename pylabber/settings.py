@@ -29,7 +29,7 @@ env = environ.Env(
     DEBUG=(bool, False),
     ALLOWED_HOSTS=(str, ""),
     SECRET_KEY=(str, "s0m3-$upEr=S3cre7/|<3Y-L0n9Er=7hAn32(haR$"),
-    DB_NAME=(str, "pylabber"),
+    DB_NAME=(str, ""),
     DB_USER=(str, "postgres"),
     DB_PASSWORD=(str, ""),
     DB_HOST=(str, "localhost"),
@@ -215,8 +215,9 @@ TIME_FORMAT = "H:i:s"
 DATETIME_FORMAT = f"{DATE_FORMAT} {TIME_FORMAT}"
 
 # Time zone
-USE_TZ = True
-TIME_ZONE = "Asia/Jerusalem"
+USE_TZ = False
+# Since "UTC" is not working. This time zone is to have 0 offset on the data imported
+TIME_ZONE = "Europe/London"
 
 
 # Logging
